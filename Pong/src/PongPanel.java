@@ -15,6 +15,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	
 	private final static Color BLUE_BACKGROUND = new Color(0,0,77);
 	private final static Color BACKGROUND_COLOR = BLUE_BACKGROUND;
+	private final static Color DOTTED_LINE_COLOR = Color.WHITE;
 	private final static int TIMER_DELAY = 5;
 	private final static int BALL_MOVEMENT_SPEED = 3;
 	private final static int POINTS_TO_WIN = 5;
@@ -222,7 +223,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 		// call the dotted line method here
 		paintDottedLine(g);
 		/* These are removed after changes submitted to github
-		 * g.setColor(Color.WHITE);
+		 * g.setColor(DOTTED_LINE_COLOR);
 		g.fillRect(20,20,100,100); */
 		// call paintSprite method for the ball
 		if(gameState != GameState.INITIALISING) {
